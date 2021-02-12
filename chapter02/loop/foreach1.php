@@ -44,6 +44,18 @@
 
     echo 'ここから';
     echo "<br />";
+//     日数＝0
+// 「data.csv」を開く。# --- (*1)
+// CSV取得して反復
+// 　　Ｆ日付＝それ[0]。
+// 　　Ｆ平均＝それ[1]。
+// 　　Ｆ最高＝それ[2] #---(*2)
+// 　　もし、Ｆ最高≧30ならば  # --- (*3)
+// 　　　日数＝日数＋1。
+// 　　　　Ｆ日付を表示。
+// 　　ここまで。
+// ここまで。
+// 「10年で30度越の日は{日数}日ありました」と表示。
 
     // 30度を超えた日
     foreach ($temperatures as $temperature){
@@ -72,7 +84,39 @@
         }
     }
 
+    echo "<br />";
+    // 配列のなかに5が存在するかしないか
+    $scores = [9, 8, 7, -6, -7, 5, 3, 10, 0, 7, -3, 1];
+    foreach($scores as $score){
+        if (in_array(5, $scores)){
+            $message = '5が存在する';
+        } else{
+            $message = 'しない';
+        }
+    }
+    echo $message;
+
+    echo "<br />";
+    // 最大値チェック
+    echo max($scores);
+    echo min($scores);
+
+    // 一致するかチェック:int
+    $test = 'aiuqeo';
+    $test1 = 'aiueo';
+    if (strcmp($test, $test1) === 0){
+        echo '同じ';
+    } else {
+        echo '違う';
+    }
+
     // while
+    $score = 0;
+    while($score < 300){
+        $score= $score +100;
+        echo $score;
+    }
+    echo $score;
 
 ?>
 </body>
