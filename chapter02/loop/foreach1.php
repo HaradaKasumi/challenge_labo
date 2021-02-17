@@ -111,10 +111,9 @@
     }
 
     // while
-    $score = 0;
-    while($score < 300){
+    $score = 100;
+    while($score < 1000){
         $score= $score +100;
-        echo $score;
     }
     echo $score;
 
