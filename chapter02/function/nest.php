@@ -56,13 +56,17 @@
         // at coderの問題　ABC081A - Placing Marbles  1が出力された回数
         function checkOutput(int $input):int
         {
+            if (!checkNumber($input)){
+                return FALSE;
+            }
+
             $array = str_split($input);
 
             $length = count($array);
             $total = 0;
 
             for($i = 0; $i <= $length-1; $i++){
-                if ($array[$i] == 1){ // ===だったとき
+                if ($array[$i] == 1){ // ===だったときは？
                     $total = $total +1;
                 }elseif($array[$i] == 0){
                     continue;
