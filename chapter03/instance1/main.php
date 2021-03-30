@@ -12,26 +12,28 @@
 
     // タスク1を作成
     $task  = new Task();
-    $name = $task->set_name('パスポートの更新');
-    $task->progress = 10;
+    $task->set_name('パスポートの更新');
+    $task->set_progress(10);
+
+    var_dump($task->get_name()); // string(24) "パスポートの更新"
+    var_dump($task->name);
 
     if ($task->isCompleted() === TRUE){
         echo $task->get_name().'はタスク完了';
     }else {
-        echo $task->name.'の達成率は'.$task->progress.'%';
+        echo $task->get_name().'の達成率は'.$task->get_progress().'%';
     }
     echo "<br />";
 
     //タスク2を作成。同じクラスを使って別のタスク作成
     $task2 = new Task();
-    $task2->name = '買い物';
-    // $task2->priority =1;
-    $task2->progress = 80;
+    $task2->set_name('買い物');
+    $task2->set_progress(50);
 
     if ($task2->isCompleted() === TRUE){
-        echo $task->name.'はタスク完了';
+        echo $task2->get_name().'はタスク完了';
     } else {
-        echo $task2->name.'の達成率は'.$task2->progress.'%';
+        echo $task2->get_name().'の達成率は'.$task2->get_progress().'%';
     }
 
 ?>

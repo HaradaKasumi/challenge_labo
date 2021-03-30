@@ -23,12 +23,20 @@ class Task
     // setter
     public function set_name($name)
     {
-        $this->name =$name;
+        $this->name = $name;
+    }
+    public function set_progress($progress)
+    {
+        $this->progress = $progress;
     }
 
     // getter
     public function get_name()
     {
         return $this->name;
+    }
+    public function get_progress()
+    {
+        return $this->progress;
     }
 }
