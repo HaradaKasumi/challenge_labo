@@ -12,12 +12,11 @@
 
     // タスク1を作成
     $task  = new Task();
-    $task->name = 'パスポートの更新';
-    // $task->priority = 0;
+    $name = $task->set_name('パスポートの更新');
     $task->progress = 10;
 
     if ($task->isCompleted() === TRUE){
-        echo $task->name.'はタスク完了';
+        echo $task->get_name().'はタスク完了';
     }else {
         echo $task->name.'の達成率は'.$task->progress.'%';
     }

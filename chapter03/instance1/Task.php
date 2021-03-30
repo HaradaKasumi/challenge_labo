@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1); 
+declare(strict_types=1);
 
 // タスククラス
 class Task
@@ -18,5 +18,17 @@ class Task
     public function isCompleted(): bool
     {
         return $this->progress >= 100; // $progressが100以上なら真を返す
+    }
+
+    // setter
+    public function set_name($name)
+    {
+        $this->name =$name;
+    }
+
+    // getter
+    public function get_name()
+    {
+        return $this->name;
     }
 }
