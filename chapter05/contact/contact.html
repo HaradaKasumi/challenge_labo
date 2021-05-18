@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>入力フォーム - honkaku</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+    <h2>お問い合わせ画面</h2>
+    <form name ="inquire" action ="#" method="post">
+        <table>
+            <tr>
+                <th>お名前</th>
+                <td><input type="name" placeholder="山田太郎"></td>
+            </tr>
+            <tr>
+                <th>メールアドレス</th>
+                <td><input type="mail"></td>
+            </tr>
+            <tr>
+                <th>地域</th>
+                <td>
+                    <select name="area" id="">
+                        <option value=""></option>
+                        <option value="兵庫">兵庫</option>
+                        <option value="大阪">大阪</option>
+                        <option value="京都">京都</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>お問い合わせ種別</th>
+                <td>
+                    <input type="checkbox" value="">ユーザ登録について<br>
+                    <input type="checkbox" value="">商品に関するお問い合わせ<br>
+                    <input type="checkbox" value="">返品について<br>
+                </td>
+            </tr>
+            <tr>
+                <th>お問い合わせ内容</th>
+                <td><textarea name="detail" id="" cols="30" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <th>メール配信を希望しますか</th>
+                <td>
+                    <input type="radio">はい
+                    <input type="radio">いいえ
+                </td>
+            </tr>
+        </table>
+        <button>送信する</button>
+    </form>
+</body>
+</html>
