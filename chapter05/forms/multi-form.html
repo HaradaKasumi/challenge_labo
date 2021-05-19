@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>2つのフォーム - honkaku</title>
+</head>
+<body>
+    <h3>記事を投稿する</h3>
+    <form name="post-form" action="post.php" method="POST">
+        <textarea name="article" rows="3" cols="40"></textarea><br>
+        <button type="submit" name="operation" value="post">投稿する</button>
+    </form>
+
+    <h3>記事をカテゴリー検索する</h3>
+    <form name="search-form" action="search.php" method="GET">
+        <select name="category">
+            <option value="daily">日常</option>
+            <option value="buisiness">ビジネス</option>
+            <option value="love">恋愛</option>
+        </select><br>
+        <button type="submit" name="operation" value="search">検索する</button>
+    </form>
+</body>
+</html>

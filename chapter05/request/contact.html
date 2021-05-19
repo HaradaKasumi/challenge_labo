@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>GETとPOSTの衝突 - honkaku</title>
+</head>
+<body>
+    <h2>お問い合わせ画面</h2>
+    <form name="inquiry" action="thankyou.php?area=2" method="post">
+        <table border="1">
+            <tr>
+                <th>地域</th>
+                <td>
+                    <select name="area">
+                        <option value=""></option>
+                        <option value="1">北海道</option>
+                        <option value="2">東北</option>
+                        <option value="3">関東</option>
+                        <option value="4">中部</option>
+                        <option value="5">近畿</option>
+                        <option value="6">中国</option>
+                        <option value="7">四国</option>
+                        <option value="8">九州</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <button type="submit" name="operation" value="send">送信する</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,8 @@
+INSERT INTO item_categories(id, created, category) VALUES(1, now(), '照明器具');
+INSERT INTO item_categories(id, created, category) VALUES(2, now(), '清掃');
+INSERT INTO item_categories(id, created, category) VALUES(3, now(), '空調');
+INSERT INTO item_categories(id, created, category) VALUES(4, now(), 'キッチン');
+INSERT INTO item_categories(id, created, category) VALUES(5, now(), '理容');
+INSERT INTO item_categories(id, created, category) VALUES(6, now(), 'ビジュアル');
+INSERT INTO item_categories(id, created, category) VALUES(7, now(), '音響');
+

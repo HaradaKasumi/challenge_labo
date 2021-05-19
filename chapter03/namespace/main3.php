@@ -11,7 +11,7 @@
 
     use Office\Word\Writer;
 
-    $writer = new Writer(); // wordのwriterクラスを使う
+    $writer = new Writer(); // useでインポート後なのでクラス名のみで呼び出し可能
     $writer->write();
 
 ?>

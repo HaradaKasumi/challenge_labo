@@ -1,0 +1,9 @@
+{
+    "autoload": {
+        "psr-4": {
+            "MyApplication\\Map\\" : "library/map/",
+            "MyApplication\\Map\\Pin\\" : "library/map/pin",
+            "MyApplication\\Map\\Image\\" : "library/map/image"
+        }
+    }
+}

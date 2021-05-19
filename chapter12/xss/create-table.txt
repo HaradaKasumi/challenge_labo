@@ -1,0 +1,7 @@
+CREATE TABLE honkaku_posts (
+    `id`            SERIAL PRIMARY KEY,
+    `created`       TIMESTAMP NOT NULL,
+    `modified`      TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    `name`          VARCHAR(255) NOT NULL,
+    `message`       VARCHAR(255)
+);

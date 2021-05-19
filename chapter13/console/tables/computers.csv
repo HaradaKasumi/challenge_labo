@@ -1,0 +1,12 @@
+物理テーブル名,computers,,,,,
+論理テーブル名,PCテーブル,,,,,
+,,,,,,
+物理カラム名,論理カラム名,データ型,プライマリーキー,NOT NULL,デフォルト値,ON UPDATE値
+id,ID,SERIAL,YES,,,
+created,作成日時,TIMESTAMP,,YES,,
+modified,変更日時,TIMESTAMP,,YES,CURRENT_TIMESTAMP,CURRENT_TIMESTAMP
+product_number,製品No,VARCHAR(255),,YES,,
+operating_system_id,OS種別ID,BIGINT,,,,
+cpu,CPU名,VARCHAR(255),,,,
+memory,メモリ容量(単位：G),INTEGER,,,,
+price,価格,INTEGER,,,,

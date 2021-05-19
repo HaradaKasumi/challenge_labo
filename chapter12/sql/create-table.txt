@@ -1,0 +1,11 @@
+CREATE TABLE honkaku_users (
+    `id`            SERIAL PRIMARY KEY,
+    `created`       TIMESTAMP NOT NULL,
+    `modified`      TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    `login_id`      VARCHAR(255) NOT NULL,
+    `password`      VARCHAR(255),
+    `user_name`     VARCHAR(255)
+);
+
+INSERT INTO honkaku_users(created, login_id, password, user_name) values(CURRENT_TIMESTAMP, 'abc', '123', 'ユーザ太郎');
+INSERT INTO honkaku_users(created, login_id, password, user_name) values(CURRENT_TIMESTAMP, 'xyz', '789', 'ユーザ花子');

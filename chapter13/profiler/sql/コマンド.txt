@@ -1,0 +1,10 @@
+cd C:\xampp7\htdocs\honkaku\chapter13\profiler\sql
+c:\xampp7\mysql\bin\mysql.exe -u root honkaku
+
+-- MariaDBにログイン後、以下のSQLを実行してください。
+set names utf8mb4;
+source create-table.txt
+delete from item_categories;
+delete from items;
+source insert-categories.txt
+source insert-items.txt

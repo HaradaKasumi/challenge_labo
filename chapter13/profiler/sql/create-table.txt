@@ -1,0 +1,14 @@
+CREATE TABLE item_categories (
+    `id`            SERIAL PRIMARY KEY,
+    `created`       TIMESTAMP NOT NULL,
+    `modified`      TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    `category`      VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE items (
+    `id`            SERIAL PRIMARY KEY,
+    `created`       TIMESTAMP NOT NULL,
+    `modified`      TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    `category_id`   BIGINT,
+    `name`          VARCHAR(255) NOT NULL
+);

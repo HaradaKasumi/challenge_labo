@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit>
+<testsuites>
+    <testsuite name="Test Suite Sample">
+        <directory>./admin/</directory>
+        <directory>./user/</directory>
+        <file>library/Library2Test.php</file>
+    </testsuite>
+</testsuites>
+</phpunit>

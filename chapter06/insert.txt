@@ -1,0 +1,9 @@
+DELETE FROM books;
+ALTER TABLE books AUTO_INCREMENT = 1;
+INSERT INTO books (created, title, publisher, published, price) VALUES (CURRENT_TIMESTAMP, 'かんたん！ペルー料理', '料理評論社', '2017-12-21', 890);
+INSERT INTO books (created, title, publisher, published, price) VALUES (CURRENT_TIMESTAMP, 'オカリナで吹く　どうよう100選', 'こども出版社', '2018-01-15', 1500);
+INSERT INTO books (created, title, publisher, published, price) VALUES (CURRENT_TIMESTAMP, 'あそぼう！マイクロビット', 'こどものあそび協会', '2018-03-15', 1250);
+INSERT INTO books (created, title, publisher, published, price) VALUES (CURRENT_TIMESTAMP, '薬膳料理　きほんの「き」', '料理評論社', '2018-03-21', 1100);
+INSERT INTO books (created, title, publisher, published, price) VALUES (CURRENT_TIMESTAMP, '写真集～鳥取砂丘の花たち', '南国出版', '2018-04-01', 2400);
+INSERT INTO books (created, title, publisher, published, price) VALUES (CURRENT_TIMESTAMP, '日本の名曲喫茶', 'クラシックアカデミー社', '2018-04-06', NULL);
+INSERT INTO books (created, title, publisher, published, price) VALUES (CURRENT_TIMESTAMP, 'シンガポール料理50選', 'ワールド出版社', '2018-04-15', 2650);

@@ -1,0 +1,16 @@
+CREATE TABLE collate_tests (
+    `id`        SERIAL PRIMARY KEY,
+    `value1`    VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci,
+    `value2`    VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
+    `value3`    VARCHAR(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin
+);
+delete from collate_tests;
+INSERT INTO collate_tests(id, value1, value2, value3) values(1, 'abc', 'abc', 'abc');
+INSERT INTO collate_tests(id, value1, value2, value3) values(2, 'xyz', 'xyz', 'xyz');
+INSERT INTO collate_tests(id, value1, value2, value3) values(3, 'あいう', 'あいう', 'あいう');
+INSERT INTO collate_tests(id, value1, value2, value3) values(4, 'ABC', 'ABC', 'ABC');
+INSERT INTO collate_tests(id, value1, value2, value3) values(5, 'XYZ', 'XYZ', 'XYZ');
+INSERT INTO collate_tests(id, value1, value2, value3) values(6, 'アイウ', 'アイウ', 'アイウ');
+INSERT INTO collate_tests(id, value1, value2, value3) values(7, 'ＡＢＣ', 'ＡＢＣ', 'ＡＢＣ');
+INSERT INTO collate_tests(id, value1, value2, value3) values(8, 'ＸＹＺ', 'ＸＹＺ', 'ＸＹＺ');
+INSERT INTO collate_tests(id, value1, value2, value3) values(9, 'ｱｲｳ', 'ｱｲｳ', 'ｱｲｳ');

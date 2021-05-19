@@ -1,0 +1,2 @@
+cd C:\xampp7\htdocs\honkaku\chapter13\documentor
+C:\xampp7\php\php.exe -d display_errors=0 phpDocumentor.phar -d classes
