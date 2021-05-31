@@ -8,15 +8,15 @@
 </head>
 <body>
     <h2>お問い合わせ画面</h2>
-    <form name ="inquire" action ="#" method="post">
+    <form name ="inquire" action ="thankyou.php" method="post">
         <table>
             <tr>
                 <th>お名前</th>
-                <td><input type="name" placeholder="山田太郎"></td>
+                <td><input type="name" name="name" placeholder="山田太郎"></td>
             </tr>
             <tr>
                 <th>メールアドレス</th>
-                <td><input type="mail"></td>
+                <td><input type="text" name ="mail"></td>
             </tr>
             <tr>
                 <th>地域</th>
@@ -32,9 +32,9 @@
             <tr>
                 <th>お問い合わせ種別</th>
                 <td>
-                    <input type="checkbox" value="">ユーザ登録について<br>
-                    <input type="checkbox" value="">商品に関するお問い合わせ<br>
-                    <input type="checkbox" value="">返品について<br>
+                    <input type="checkbox" name="type" value="ユーザ登録について">ユーザ登録について<br>
+                    <input type="checkbox" name="type" value="商品に関するお問い合わせ">商品に関するお問い合わせ<br>
+                    <input type="checkbox" name="type" value="返品について">返品について<br>
                 </td>
             </tr>
             <tr>
@@ -44,12 +44,12 @@
             <tr>
                 <th>メール配信を希望しますか</th>
                 <td>
-                    <input type="radio">はい
-                    <input type="radio">いいえ
+                    <input type="radio" name="news_type" value="受け取ります">はい
+                    <input type="radio" name="news_type" value="受けとりません">いいえ
                 </td>
             </tr>
         </table>
-        <button>送信する</button>
+        <button type="submit" name ="operation" value ="send">送信する</button>
     </form>
 </body>
 </html>
